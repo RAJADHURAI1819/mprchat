@@ -1,0 +1,42 @@
+/* InputBox Styles */
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #3d3d3d;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px; /* Ensure some spacing from the messages */
+  width: 100%; /* Ensure it takes up the full width of the parent container */
+}
+
+.chat-input {
+  flex-grow: 1; /* This ensures the input takes up all available space */
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%; /* Ensure the input box takes up the full width */
+}
+
+.chat-input:focus {
+  box-shadow: none;
+  border: 1px solid #525252;
+}
+
+.send-icon {
+  font-size: 30px;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-disabled {
+  color: #3d3d3d;
+  cursor: not-allowed;
+}
+
+.send-icon:not(.icon-disabled):hover {
+  color: #0056b3;
+}

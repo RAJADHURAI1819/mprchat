@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  # Frontend Service (Node.js with NGINX)
+  frontend:
+    build:
+      context: ./mprchat # Path to the frontend folder
+      dockerfile: Dockerfile # Dockerfile inside the frontend folder
+    ports:
+      - "80:80" # Expose port 80 to the host machine
+    volumes:
+      - ./mprchat:/app # Mount frontend code for local development (optional)
+    restart: always
+
+  # Backend Service (Python/Flask or other backend)
+  backend:
+    build:
+      context: ./AIApiInterference # Path to the backend folder
+      dockerfile: Dockerfile # Dockerfile inside the backend folder
+    ports:
+      - "5000:5000" # Expose port 5000 for the backend API
+    environment:
+      - FLASK_APP=apiInterference.py # Set the Flask app (if using Flask)
+    volumes:
+      - ./AIApiInterference:/app # Mount backend code for local development (optional)
+    restart: always

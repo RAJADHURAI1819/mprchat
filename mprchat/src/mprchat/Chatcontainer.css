@@ -1,0 +1,35 @@
+.messages-container {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #1e1e1e;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 15px;
+  max-width: 50%;
+  word-wrap: break-word;
+  display: inline-block; /* Ensures the messages are treated as blocks */
+}
+
+.message-left {
+  background-color: #3d3d3d;
+  color: white;
+  align-self: flex-start; /* Aligns the bot messages to the left */
+}
+
+.message-right {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end; /* Aligns the user messages to the right */
+}
+.avatar-align {
+  /* border: 2px solid #ff4500; */
+  border-radius: 50%;
+  font-size: 56px;
+}

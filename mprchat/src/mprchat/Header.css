@@ -1,0 +1,9 @@
+.header-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3vmh;
+  width: 100%;
+  gap: 2%;
+  background-color: black;
+}

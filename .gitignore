@@ -1,0 +1,25 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/mprchat/node_modules
+/mprchat/.pnp
+/mprchat.pnp.js
+
+# testing
+/mprchat/coverage
+
+# production
+/mprchat/build
+
+# misc
+/mprchat/.DS_Store
+/mprchat/.env.local
+/mprchat/.env.development.local
+/mprchat/.env.test.local
+/mprchat/.env.production.local
+
+/mprchat/npm-debug.log*
+/mprchat/yarn-debug.log*
+/mprchat/yarn-error.log*
+
+/AIApiInterference/venv

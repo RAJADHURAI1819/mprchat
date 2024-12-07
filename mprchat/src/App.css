@@ -1,0 +1,14 @@
+/* body {
+  background-color: #1e1e1e;
+} */
+.Main-style {
+  /* margin: 0; */
+  font-family: Arial, sans-serif;
+  /* background-color: #1e1e1e; */
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+}
